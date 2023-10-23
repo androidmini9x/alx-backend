@@ -46,7 +46,7 @@ class Server:
         if start > len(data):
             return []
         return data[start:end]
-    
+
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         '''Return data as Dictionary (Key->Value)'''
         data = self.get_page(page, page_size)
